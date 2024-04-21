@@ -1,0 +1,659 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+}
+
+.outlet {
+  border: 1px solid orange;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+.outlet:hover {
+  background-color: orange;
+}
+.outlet:hover a {
+  color: white !important;
+}
+
+.monthlybill {
+  padding: 20px;
+  border: 1px solid green;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+.monthlybill:hover {
+  background-color: green;
+}
+.monthlybill:hover a {
+  color: white;
+}
+.monthlybill a {
+  display: flex;
+  flex-direction: column !important;
+  color: green;
+  transition: 0.4s;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+header .top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .top .corporatives {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+header .top .corporatives ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+header .top .corporatives ul li {
+  width: 10%;
+}
+header .top .corporatives ul li a {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  color: black;
+}
+header .top .corporatives ul li a img {
+  max-width: 80%;
+  object-fit: contain;
+}
+header .top .cabinet {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+header .top .cabinet ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+header .top .cabinet ul li {
+  width: 30%;
+  text-align: center;
+  display: flex;
+}
+header .top .cabinet ul li a {
+  text-decoration: none;
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+header .top .cabinet ul li a span {
+  width: 50%;
+}
+header .top .cabinet ul li a img {
+  max-width: 20%;
+  object-fit: contain;
+}
+header .bottom {
+  padding: 20px 0 0 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .bottom .logo {
+  width: 20%;
+  overflow: hidden;
+}
+header .bottom .logo a {
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+}
+header .bottom .logo a img {
+  width: 40%;
+  object-fit: contain;
+}
+header .bottom .search {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .bottom .search .catalog {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  padding: 20px;
+  background-color: green;
+  color: white;
+  border-radius: 10px;
+}
+header .bottom .search .catalog i {
+  font-size: 20px;
+}
+header .bottom .search .catalog a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+header .bottom .search input {
+  width: 75%;
+  padding: 20px;
+  border-radius: 10px;
+}
+header .bottom .payments {
+  width: 30%;
+}
+header .bottom .payments ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  gap: 10px;
+}
+header .bottom .payments ul li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+#Offers {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+#Offers .left {
+  width: 65%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#Offers .left a {
+  display: inline-block;
+  width: 100%;
+}
+#Offers .left a img {
+  width: 100%;
+  object-fit: contain;
+}
+#Offers .right {
+  width: 30%;
+  height: 472.44px;
+  border-radius: 10px;
+  border: 1px solid orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#Offers .right .imagetop {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: orange;
+  color: black;
+}
+#Offers .right .imagetop span {
+  width: 30%;
+  display: inline-block;
+}
+#Offers .right .imagemid {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+}
+#Offers .right .imagemid .title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#Offers .right .imagemid .title p {
+  font-size: 20px;
+  font-weight: bold;
+  width: 20%;
+}
+#Offers .right .imagemid .title img {
+  width: 20%;
+}
+#Offers .right .imagemid .imagepart {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#Offers .right .imagemid .imagepart img {
+  width: 40%;
+}
+#Offers .right .imagemid .imagepart .prodinfos {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+#Offers .right .imagemid .imagepart .prodinfos span {
+  color: white;
+  background-color: green;
+  padding: 10px;
+  border-radius: 10px;
+}
+#Offers .right .imagebot {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+}
+#Offers .right .imagebot .price {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#Offers .right .imagebot .buy {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+#Offers .right .imagebot .buy a {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  width: 40%;
+  padding: 20px 10px;
+  border-radius: 10px;
+  color: white;
+}
+#Offers .right .imagebot .buy a:nth-child(1) {
+  background-color: orange;
+}
+#Offers .right .imagebot .buy a:nth-child(2) {
+  background-color: green;
+}
+
+#Services {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#Services .service {
+  width: 15%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: green;
+}
+#Services .service i {
+  font-size: 30px;
+}
+#Services .line {
+  width: 0.5px;
+  height: 40px;
+  background-color: black;
+}
+
+#Products {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+#Products .text {
+  margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+#Products .text h1 {
+  font-size: 30px;
+  width: 20%;
+}
+#Products .text .buttons {
+  display: flex;
+  gap: 20px;
+  width: 80%;
+  justify-content: flex-end;
+}
+#Products .text .buttons i {
+  font-size: 30px;
+  border-radius: 50%;
+  padding: 30px;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+#Products .cards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#Products .cards .card {
+  padding: 10px 20px;
+  width: 25%;
+  border-radius: 10px;
+  border: 1px solid gray;
+  flex-direction: column;
+}
+#Products .cards .card .icons {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+#Products .cards .card .image {
+  width: 100%;
+  overflow: hidden;
+}
+#Products .cards .card .image img {
+  max-width: 70%;
+  object-fit: contain;
+}
+#Products .cards .card .category {
+  color: gray;
+}
+#Products .cards .card .name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#Products .cards .card .reviews {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#Products .cards .card .reviews .stars {
+  width: 40%;
+}
+#Products .cards .card .reviews .stars i {
+  color: gold;
+}
+#Products .cards .card .reviews .comment {
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+#Products .cards .card .info {
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  margin-top: 30px;
+}
+#Products .cards .card .info p {
+  width: 30%;
+  padding: 10px;
+  background-color: rgb(145, 145, 203);
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+}
+#Products .cards .card .cases {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+#Products .cards .card .cases .price {
+  margin-top: 20px;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#Products .cards .card .cases .price p {
+  font-size: 20px;
+  font-weight: bold;
+}
+#Products .cards .card .cases .date {
+  width: 56%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#Products .cards .card .cases .date p {
+  width: 30%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+#Products .cards .card .addcart {
+  width: 100%;
+  margin-top: 30px;
+  padding: 20px 0 20px 0;
+  background-color: green;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  border-radius: 5px;
+}
+#Products .cards .card .addcart span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#Brands {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+#Brands .brand {
+  width: 15%;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+#Brands .brand img {
+  width: 100%;
+  object-fit: contain;
+}
+
+#Youtube {
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+#Youtube .text {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#Youtube .text p {
+  width: 75%;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 30px;
+  font-weight: bold;
+}
+#Youtube .text .channel {
+  display: flex;
+  width: 25%;
+  padding: 10px;
+  justify-content: center;
+  gap: 20px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+#Youtube .text .channel span {
+  font-size: 20px;
+  font-weight: bold;
+}
+#Youtube .text .channel i {
+  font-size: 30px;
+}
+#Youtube .videos {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#Youtube .videos .video {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 31%;
+  display: flex;
+  flex-direction: column;
+}
+#Youtube .videos .video:hover .videocover .overlay {
+  opacity: 0.3;
+}
+#Youtube .videos .video .videocover {
+  width: 100%;
+  position: relative;
+}
+#Youtube .videos .video .videocover .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: green;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Youtube .videos .video .videocover .play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 50%;
+  padding: 20px;
+  text-align: center;
+}
+#Youtube .videos .video .videocover img {
+  max-width: 100%;
+  object-fit: contain;
+}
+#Youtube .videos .video .videotext {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#Youtube .videos .video .videotext span:nth-child(1) {
+  color: #232d40;
+  font-size: 20px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 1.2rem;
+}
+#Youtube .videos .video .videotext span:nth-child(2) {
+  color: #95979c;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+#ScanQR {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #393E4A;
+  margin-top: 30px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+#ScanQR .qrtext {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+}
+#ScanQR .qrtext h1 {
+  color: white;
+  font-size: 50px;
+  width: 100%;
+}
+#ScanQR .qrtext a {
+  width: 30%;
+  border-radius: 5px;
+  margin-top: 10px;
+  border: 0px solid green;
+  display: inline-block;
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+  background-color: green;
+  color: white;
+  transition: 0.4s;
+}
+#ScanQR .qrtext a:hover {
+  background-color: transparent;
+  border: 1px solid green;
+}
+#ScanQR .mainqr {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  height: 250px;
+}
+#ScanQR .lines {
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+#ScanQR .lines .line {
+  height: 10px;
+}
+#ScanQR .lines .line:nth-child(1) {
+  width: 30%;
+  background-color: green;
+}
+#ScanQR .lines .line:nth-child(2) {
+  width: 70%;
+  background-color: orange;
+}
+#ScanQR .lines .dot {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
